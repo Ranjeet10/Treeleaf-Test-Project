@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
 class RetainView: UIView {
     
-    var vc : UIViewController?
+    weak var vc : UIViewController?
     
     init(vc: UIViewController) {
         super.init(frame: .zero)
