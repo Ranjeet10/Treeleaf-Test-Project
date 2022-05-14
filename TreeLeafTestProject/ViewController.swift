@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 
 class RetainView: UIView {
     
+    //Handle leak. Weak variable used for breaking the retain cycle.
     weak var vc : UIViewController?
     
     init(vc: UIViewController) {
