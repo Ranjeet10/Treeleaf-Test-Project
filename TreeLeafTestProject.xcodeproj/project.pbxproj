@@ -16,7 +16,12 @@
 		2D01526D282E6320008F378B /* TreeLeafTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01526C282E6320008F378B /* TreeLeafTestProjectTests.swift */; };
 		2D015277282E6321008F378B /* TreeLeafTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D015276282E6321008F378B /* TreeLeafTestProjectUITests.swift */; };
 		2D015279282E6321008F378B /* TreeLeafTestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D015278282E6321008F378B /* TreeLeafTestProjectUITestsLaunchTests.swift */; };
-		2D015286282E6948008F378B /* LeakyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D015285282E6948008F378B /* LeakyVC.swift */; };
+		2D015286282E6948008F378B /* LeakyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D015285282E6948008F378B /* LeakyViewController.swift */; };
+		2D9AED31283113B500C61E82 /* RandomActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9AED26283113B500C61E82 /* RandomActivityData.swift */; };
+		2D9AED32283113B500C61E82 /* RandomActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9AED28283113B500C61E82 /* RandomActivityViewController.swift */; };
+		2D9AED34283113B500C61E82 /* RandomActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9AED2B283113B500C61E82 /* RandomActivityService.swift */; };
+		2D9AED35283113B500C61E82 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9AED2D283113B500C61E82 /* Box.swift */; };
+		2D9AED36283113B500C61E82 /* RandomActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9AED2F283113B500C61E82 /* RandomActivityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +55,12 @@
 		2D015272282E6321008F378B /* TreeLeafTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeLeafTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D015276282E6321008F378B /* TreeLeafTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeLeafTestProjectUITests.swift; sourceTree = "<group>"; };
 		2D015278282E6321008F378B /* TreeLeafTestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeLeafTestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2D015285282E6948008F378B /* LeakyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeakyVC.swift; sourceTree = "<group>"; };
+		2D015285282E6948008F378B /* LeakyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeakyViewController.swift; sourceTree = "<group>"; };
+		2D9AED26283113B500C61E82 /* RandomActivityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomActivityData.swift; sourceTree = "<group>"; };
+		2D9AED28283113B500C61E82 /* RandomActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomActivityViewController.swift; sourceTree = "<group>"; };
+		2D9AED2B283113B500C61E82 /* RandomActivityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomActivityService.swift; sourceTree = "<group>"; };
+		2D9AED2D283113B500C61E82 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		2D9AED2F283113B500C61E82 /* RandomActivityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomActivityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,13 @@
 		2D015254282E6319008F378B /* TreeLeafTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				2D9AED27283113B500C61E82 /* Controllers */,
+				2D9AED24283113B500C61E82 /* Models */,
+				2D9AED29283113B500C61E82 /* Services */,
+				2D9AED2C283113B500C61E82 /* Utilities */,
+				2D9AED2E283113B500C61E82 /* View Models */,
 				2D015255282E6319008F378B /* AppDelegate.swift */,
 				2D015257282E6319008F378B /* SceneDelegate.swift */,
-				2D015259282E6319008F378B /* ViewController.swift */,
-				2D015285282E6948008F378B /* LeakyVC.swift */,
 				2D01525B282E6319008F378B /* Main.storyboard */,
 				2D01525E282E6320008F378B /* Assets.xcassets */,
 				2D015260282E6320008F378B /* LaunchScreen.storyboard */,
@@ -128,6 +141,48 @@
 				2D015278282E6321008F378B /* TreeLeafTestProjectUITestsLaunchTests.swift */,
 			);
 			path = TreeLeafTestProjectUITests;
+			sourceTree = "<group>";
+		};
+		2D9AED24283113B500C61E82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D9AED26283113B500C61E82 /* RandomActivityData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D9AED27283113B500C61E82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D015285282E6948008F378B /* LeakyViewController.swift */,
+				2D015259282E6319008F378B /* ViewController.swift */,
+				2D9AED28283113B500C61E82 /* RandomActivityViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D9AED29283113B500C61E82 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D9AED2B283113B500C61E82 /* RandomActivityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D9AED2C283113B500C61E82 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2D9AED2D283113B500C61E82 /* Box.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2D9AED2E283113B500C61E82 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D9AED2F283113B500C61E82 /* RandomActivityViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9AED31283113B500C61E82 /* RandomActivityData.swift in Sources */,
 				2D01525A282E6319008F378B /* ViewController.swift in Sources */,
+				2D9AED36283113B500C61E82 /* RandomActivityViewModel.swift in Sources */,
 				2D015256282E6319008F378B /* AppDelegate.swift in Sources */,
+				2D9AED32283113B500C61E82 /* RandomActivityViewController.swift in Sources */,
 				2D015258282E6319008F378B /* SceneDelegate.swift in Sources */,
-				2D015286282E6948008F378B /* LeakyVC.swift in Sources */,
+				2D9AED34283113B500C61E82 /* RandomActivityService.swift in Sources */,
+				2D015286282E6948008F378B /* LeakyViewController.swift in Sources */,
+				2D9AED35283113B500C61E82 /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

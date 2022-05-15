@@ -1,5 +1,5 @@
 //
-//  LeakyVC.swift
+//  LeakyViewController.swift
 //  TreeLeafTestProject
 //
 //  Created by Ranjeet Sah on 13/05/2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LeakyVC: UIViewController {
+class LeakyViewController: UIViewController {
         
     var retainView: RetainView?
 
